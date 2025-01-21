@@ -90,27 +90,34 @@ A modern, intuitive task management application built with Next.js, featuring a 
 ## Project Structure
 
 ```plaintext
-├── app
-│   ├── api
-│   │   └── tasks/
-│   ├── analytics/
-│   │   └── page.tsx
-│   ├── calendar/
-│   │   └── page.tsx
-│   ├── profile/
-│   │   └── page.tsx
-│   ├── tasks/
-│   │   └── page.tsx
-│   ├── layout.tsx
-│   └── page.tsx
-├── components
-│   ├── Sidebar.tsx
-│   ├── TaskCard.tsx
-│   └── TaskForm.tsx
-├── utils
-│   └── db.ts
-└── types
-    └── Task.ts
+app/
+└── app/
+    ├── analytics/
+    │   └── page.tsx
+    ├── api/
+    │   ├── auth/
+    │   │   └── [...nextauth]/
+    │   │       └── route.ts
+    │   ├── tasks/
+    │   │   ├── [id]/
+    │   │   │   └── route.ts
+    │   │   └── route.ts
+    │   └── users/
+    │       └── profile/
+    │           └── route.ts
+    ├── auth/
+    │   └── signin/
+    │       └── page.tsx
+    ├── calendar/
+    │   └── page.tsx
+    ├── favicon.ico
+    ├── globals.css
+    ├── layout.tsx
+    ├── page.tsx
+    ├── profile/
+    │   └── page.tsx
+    └── tasks/
+        └── page.tsx
 ```
 
 ## Upcoming Features
